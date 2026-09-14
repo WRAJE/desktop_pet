@@ -1,0 +1,191 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+  font-family: "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#bubble,
+#zzz,
+#chat {
+  position: fixed;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+#bubble {
+  max-width: 180px;
+  padding: 6px 10px;
+  background: #fffaf4;
+  color: #3a2428;
+  border: 2px solid #3a2428;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  image-rendering: pixelated;
+  box-shadow: 2px 2px 0 #3a2428;
+}
+
+#bubble.hidden,
+#zzz.hidden,
+#chat.hidden,
+#key-form.hidden {
+  display: none;
+}
+
+#zzz {
+  color: #6e8cc8;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#chat {
+  position: fixed;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+#key-form {
+  position: fixed;
+  pointer-events: auto;
+  z-index: 30;
+  width: 220px;
+  padding: 8px;
+  background: #fffaf4;
+  color: #3a2428;
+  border: 2px solid #3a2428;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 #3a2428;
+  font-size: 12px;
+}
+
+#key-form p {
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+#key-form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #3a2428;
+  background: #fff;
+  color: #3a2428;
+  padding: 6px 8px;
+  font-size: 12px;
+  outline: none;
+  border-radius: 4px;
+}
+
+.key-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.key-actions button {
+  flex: 1;
+  border: 2px solid #3a2428;
+  background: #fffaf4;
+  color: #3a2428;
+  font: inherit;
+  padding: 4px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.key-actions button:hover {
+  background: #f3d5c8;
+}
+
+#chat input {
+  width: 168px;
+  border: 2px solid #3a2428;
+  background: #fffaf4;
+  color: #3a2428;
+  padding: 6px 8px;
+  font-size: 12px;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 #3a2428;
+  user-select: text;
+}
+
+#key-form input {
+  user-select: text;
+}
+
+#pet-menu {
+  position: fixed;
+  z-index: 40;
+  min-width: 220px;
+  padding: 6px;
+  background: #fffaf4;
+  color: #3a2428;
+  border: 2px solid #3a2428;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 #3a2428;
+  pointer-events: auto;
+  font-size: 12px;
+}
+
+#pet-menu.hidden {
+  display: none;
+}
+
+#pet-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#pet-menu button:hover {
+  background: #f3d5c8;
+}
+
+#pet-menu button.checked::after {
+  content: " ✓";
+  float: right;
+}
+
+.menu-scale {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px 8px;
+}
+
+.menu-scale span:first-child {
+  flex: none;
+}
+
+.menu-scale input[type="range"] {
+  flex: 1;
+  min-width: 96px;
+  accent-color: #c45c6a;
+}
+
+#scale-label {
+  width: 2.6em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,105 @@
+{
+  "image": "erii.png",
+  "frameSize": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    122
+  ],
+  "scale": 3,
+  "placeholder": false,
+  "animations": {
+    "idle": {
+      "row": 0,
+      "fps": 1,
+      "loop": true,
+      "frames": 1
+    },
+    "walk": {
+      "row": 1,
+      "fps": 6,
+      "loop": true,
+      "frames": 6
+    },
+    "held": {
+      "row": 2,
+      "fps": 8,
+      "loop": true,
+      "frames": 4
+    },
+    "fall": {
+      "row": 3,
+      "fps": 6,
+      "loop": true,
+      "frames": 2
+    },
+    "land": {
+      "row": 4,
+      "fps": 12,
+      "loop": false,
+      "frames": 4
+    },
+    "sit": {
+      "row": 5,
+      "fps": 2,
+      "loop": true,
+      "frames": 2
+    },
+    "sleep": {
+      "row": 6,
+      "fps": 2,
+      "loop": true,
+      "frames": 4
+    },
+    "blink_tilt": {
+      "row": 7,
+      "fps": 6,
+      "loop": false,
+      "frames": 4
+    },
+    "happy_hop": {
+      "row": 8,
+      "fps": 8,
+      "loop": false,
+      "frames": 4
+    },
+    "spin": {
+      "row": 9,
+      "fps": 8,
+      "loop": false,
+      "frames": 4
+    },
+    "heart": {
+      "row": 10,
+      "fps": 5,
+      "loop": false,
+      "frames": 4
+    },
+    "panic_run": {
+      "row": 11,
+      "fps": 10,
+      "loop": true,
+      "frames": 4
+    },
+    "yawn": {
+      "row": 12,
+      "fps": 4,
+      "loop": false,
+      "frames": 4
+    },
+    "look": {
+      "row": 13,
+      "fps": 4,
+      "loop": false,
+      "frames": 4
+    },
+    "sway": {
+      "row": 14,
+      "fps": 3,
+      "loop": true,
+      "frames": 4
+    }
+  }
+}

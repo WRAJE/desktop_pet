@@ -1,0 +1,39 @@
+{
+  "name": "erii-desktop-pet",
+  "productName": "绘梨衣",
+  "version": "1.0.0",
+  "description": "上杉绘梨衣像素桌宠",
+  "main": "dist/main/main.js",
+  "author": "erii",
+  "license": "MIT",
+  "scripts": {
+    "gen:sprites": "python3 tools/pack_character.py",
+    "build": "node scripts/build.js",
+    "start": "npm run build && electron .",
+    "dev": "npm run build && electron .",
+    "pack": "npm run build && electron-builder --mac"
+  },
+  "dependencies": {
+    "@cursor/sdk": "^1.0.6"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^26.0.12",
+    "esbuild": "^0.25.9",
+    "typescript": "^5.9.2"
+  },
+  "build": {
+    "appId": "dev.erii.desktoppet",
+    "productName": "绘梨衣",
+    "files": [
+      "dist/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "icon": "dist/assets/icon.png",
+      "target": [
+        "dir"
+      ]
+    }
+  }
+}
